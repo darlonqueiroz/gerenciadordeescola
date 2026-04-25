@@ -1,4 +1,6 @@
 package com.ge.GerenciaDeEscola.Eployers;
 
-public interface EployRepository {
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface EployRepository extends JpaRepository {
 }
