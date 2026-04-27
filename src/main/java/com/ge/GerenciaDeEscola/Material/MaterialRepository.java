@@ -1,4 +1,6 @@
 package com.ge.GerenciaDeEscola.Material;
 
-public interface MaterialRepository {
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface MaterialRepository extends JpaRepository{
 }
