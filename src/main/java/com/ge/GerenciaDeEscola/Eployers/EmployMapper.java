@@ -1,4 +1,6 @@
 package com.ge.GerenciaDeEscola.Eployers;
 
-public class EmployMapper {
+import com.ge.GerenciaDeEscola.AbstractClasses.Human;
+
+public class EmployMapper extends Human {
 }
