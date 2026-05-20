@@ -1,6 +1,4 @@
 package com.ge.GerenciaDeEscola.Eployers;
 
-public class EmployDTO {
-
-
+public class EmployMapper {
 }
