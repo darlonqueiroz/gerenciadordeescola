@@ -13,4 +13,15 @@ public class EmployMapper extends Human {
         model.setPosition(dto.getPosition());
         return model;
     }
+
+        public static EmployDTO toEmployDTO(EmployModel model) {
+            EmployDTO dto = new EmployDTO();
+            dto.setId(model.getId());
+            dto.setName(model.getName());
+            dto.setCpf(model.getCpf());
+            dto.setEmail(model.getEmail());
+            dto.setPhone(model.getPhone());
+            dto.setPosition(model.getPosition());
+            return dto;
+        }
 }
