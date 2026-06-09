@@ -2,6 +2,15 @@ package com.ge.GerenciaDeEscola.Eployers;
 
 public class EmployDTO {
 
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    private Long id ;
     private String name;
     private String cpf;
     private String email;
