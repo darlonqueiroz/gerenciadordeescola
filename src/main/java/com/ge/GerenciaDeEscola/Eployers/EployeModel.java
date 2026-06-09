@@ -2,12 +2,14 @@ package com.ge.GerenciaDeEscola.Eployers;
 
 import com.ge.GerenciaDeEscola.AbstractClasses.Human;
 
+import java.math.BigDecimal;
+
 public class EployeModel extends Human{
     private Long id;
     private String office;
-    private double salary;
+    private BigDecimal salary;
 
-    public EployeModel(Long id, String office, double salary) {
+    public EployeModel(Long id, String name, String cpf,String email, String phoneNumber, String address, String dateOfBirth, String gender, String office, BigDecimal salary) {
         super(name, cpf, email, phoneNumber, address, dateOfBirth, gender);
         this.id = id;
         this.office = office;
@@ -22,11 +24,11 @@ public class EployeModel extends Human{
         this.office = office;
     }
 
-    public double getSalary() {
+    public BigDecimal getSalary() {
         return salary;
     }
 
-    public void setSalary(double salary) {
+    public void setSalary(BigDecimal salary) {
         this.salary = salary;
     }
 
