@@ -7,7 +7,7 @@ public class StudentModel extends Human{
     private String registrationNumber;
 
     public StudentModel(String name, int age, String course, String registrationNumber) {
-        super(name, age);
+        super(name, age, cpf, email, phoneNumber, address, dateOfBirth, gender);
         this.course = course;
         this.registrationNumber = registrationNumber;
     }
