@@ -1,5 +1,6 @@
 package com.ge.GerenciaDeEscola.Material;
 
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -12,5 +13,10 @@ public class MaterialController {
 
     public MaterialController(MaterialService materialService) {
         this.materialService = materialService;
+    }
+
+    @GetMapping("/listmaterial")
+    public String MaterialToList() {
+        return "Lista de Materiais";
     }
 }
