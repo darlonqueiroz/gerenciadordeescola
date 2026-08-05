@@ -10,14 +10,17 @@ public class ReportCardDTO {
     }
 
     public String getStudentName() {
+
         return studentName;
     }
 
     public void setStudentName(String studentName) {
+
         this.studentName = studentName;
     }
 
     public String getGrade() {
+
         return grade;
     }
 
