@@ -14,7 +14,18 @@ public abstract class Human {
 
     }
 
+    public Human(String name, String cpf, String email, String phoneNumber, String address, String dateOfBirth, String gender) {
+        this.name = name;
+        this.cpf = cpf;
+        this.email = email;
+        this.phoneNumber = phoneNumber;
+        this.address = address;
+        this.dateOfBirth = dateOfBirth;
+        this.gender = gender;
+    }
+
     public String getCpf() {
+
         return cpf;
     }
 
