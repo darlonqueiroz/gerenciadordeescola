@@ -1,19 +1,19 @@
-package com.ge.GerenciaDeEscola.Eployers;
+package com.ge.GerenciaDeEscola.Employe;
 import org.springframework.stereotype.Service;
 import java.util.List;
 
 @Service
-public class EployService {
+public class EmployeService {
 
-    private EmployerRepository eployeRepository;
+    private EmployeRepository employeRepository;
 
-    public EployService(EmployerRepository eployeRepository) {
+    public EmployeService(EmployeRepository employeRepository) {
 
-        this.eployeRepository = eployeRepository;
+        this.employeRepository = employeRepository;
 
     }
 
-    public List<EployeModel> EployToList(){
-            return eployeRepository.findAll();
+    public List<EmployeModel> EmployeToList(){
+            return employeRepository.findAll();
     }
 }

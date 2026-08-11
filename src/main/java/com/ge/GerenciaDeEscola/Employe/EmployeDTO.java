@@ -1,6 +1,6 @@
-package com.ge.GerenciaDeEscola.Eployers;
+package com.ge.GerenciaDeEscola.Employe;
 
-public class EmployDTO {
+public class EmployeDTO {
 
     public Long getId() {
         return id;
@@ -16,7 +16,7 @@ public class EmployDTO {
     private String email;
     private String phone;
 
-    public EmployDTO(String name, String cpf, String email, String phone) {
+    public EmployeDTO(String name, String cpf, String email, String phone) {
         this.name = name;
         this.cpf = cpf;
         this.email = email;

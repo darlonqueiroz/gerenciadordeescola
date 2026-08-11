@@ -1,9 +1,9 @@
-package com.ge.GerenciaDeEscola.Eployers;
+package com.ge.GerenciaDeEscola.Employe;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
 @Repository
-public interface EmployerRepository extends JpaRepository<EployeModel, Long> {
+public interface EmployeRepository extends JpaRepository<EmployeModel, Long> {
 
 }

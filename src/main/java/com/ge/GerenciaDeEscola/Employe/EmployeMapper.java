@@ -1,6 +1,6 @@
-package com.ge.GerenciaDeEscola.Eployers;
+package com.ge.GerenciaDeEscola.Employe;
 
 import com.ge.GerenciaDeEscola.AbstractClasses.Human;
 
-public class EmployMapper extends Human {
+public class EmployeMapper extends Human {
 }
