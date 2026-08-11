@@ -1,4 +1,4 @@
-package com.ge.GerenciaDeEscola.Eployers;
+package com.ge.GerenciaDeEscola.Employe;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -9,18 +9,18 @@ import java.util.List;
 
 @Controller
 @RestController
-@RequestMapping(name = "/eployers")
+@RequestMapping(name = "/employe")
 
-public class EmployerController {
-    private EployService eployeService;
+public class EmployeController {
+    private EmployeService employeService;
 
-    public EmployerController(EployService eployService){
-        this.eployeService = eployService;
+    public EmployeController(EmployeService employeService){
+        this.employeService = employeService;
     }
 
-    @GetMapping("/list")
-    public List<EployeModel> EployToList (){
-
-        return eployeService.EployToList();
-    }
+ //   @GetMapping("/list")
+  //  public List<EmployeModel> EmployeToList (){
+//
+     //    return employeService.EmployeToList();
+  //  }
 }
