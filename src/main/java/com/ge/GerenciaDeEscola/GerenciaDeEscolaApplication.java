@@ -11,6 +11,7 @@ public class GerenciaDeEscolaApplication {
 		SpringApplication.run(GerenciaDeEscolaApplication.class, args);
 
 
+
 	}
 
 }
