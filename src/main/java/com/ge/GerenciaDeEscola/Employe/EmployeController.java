@@ -23,4 +23,9 @@ public class EmployeController {
 //
      //    return employeService.EmployeToList();
   //  }
+
+    @GetMapping("/list")
+    public List<EmployeModel> EmployeToList() {
+        return employeService.EmployeToList();
+    }
 }
