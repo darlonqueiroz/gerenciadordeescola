@@ -1,10 +1,9 @@
 package com.ge.GerenciaDeEscola.Student;
 
+import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
 @Repository
-public interface StudentRepository {
-        StudentModel save(StudentModel student);
-        StudentModel findById(Long id);
-        void deleteById(Long id);
+public interface StudentRepository extends JpaRepository<StudentModel, Long> {
+
 }

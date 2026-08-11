@@ -1,6 +1,7 @@
 package com.ge.GerenciaDeEscola.Student;
 
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -14,4 +15,8 @@ public class StudentController {
         this.studentService = studentService;
     }
 
+   // @GetMapping("/list")
+  //  public String listStudents() {
+     //   return "List of students";
+   // }
 }
