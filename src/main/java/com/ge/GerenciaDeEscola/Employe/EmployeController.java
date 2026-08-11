@@ -11,15 +11,16 @@ import java.util.List;
 @RestController
 @RequestMapping(name = "/eployers")
 
-public class EployController {
+public class EmployerController {
     private EployService eployeService;
 
-    public EployController(EployService eployService){
+    public EmployerController(EployService eployService){
         this.eployeService = eployService;
     }
 
     @GetMapping("/list")
     public List<EployeModel> EployToList (){
+
         return eployeService.EployToList();
     }
 }

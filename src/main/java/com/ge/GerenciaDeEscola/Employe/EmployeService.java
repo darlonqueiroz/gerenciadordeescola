@@ -5,9 +5,9 @@ import java.util.List;
 @Service
 public class EployService {
 
-    private EployRepository eployeRepository;
+    private EmployerRepository eployeRepository;
 
-    public EployService(EployRepository eployeRepository) {
+    public EployService(EmployerRepository eployeRepository) {
 
         this.eployeRepository = eployeRepository;
 
