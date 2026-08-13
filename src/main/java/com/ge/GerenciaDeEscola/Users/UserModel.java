@@ -1,9 +1,6 @@
 package com.ge.GerenciaDeEscola.Users;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
 import lombok.Data;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
@@ -13,7 +10,8 @@ import java.util.List;
 
 @Entity
 @Data
-public class User implements UserDetails {
+@Table(name = "users")
+public class UserModel implements UserDetails {
 
     @Id
     @GeneratedValue (strategy = GenerationType.IDENTITY)
