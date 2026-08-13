@@ -1,4 +1,6 @@
 package com.ge.GerenciaDeEscola.Users;
 
-public record LoginResponse() {
+
+
+public record LoginResponse(String token) {
 }
